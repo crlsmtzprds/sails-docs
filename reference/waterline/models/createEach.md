@@ -57,7 +57,7 @@ await User.createEach([{name:'Finn'}, {name: 'Jake'}]);
 
 ##### Fetching newly created records
 ```javascript
-var createdUsers = User.createEach([{name:'Finn'}, {name: 'Jake'}]).fetch();
+var createdUsers = await User.createEach([{name:'Finn'}, {name: 'Jake'}]).fetch();
 sails.log(`Created ${createdUsers.length} user${createdUsers.length===1?'':'s'}.`);
 ```
 
